@@ -1,0 +1,17 @@
+{
+  "identifier": "com.zowe.explorer.server.auth",
+  "pluginType": "nodeAuthentication",
+  "authenticationCategory": "explorerServer",
+  "apiVersion": "1.0",
+  "pluginVersion": "1.0",
+  "filename": "explorerServerAuth.js",
+  "dataServices": [
+     {
+       "type": "import",
+       "sourcePlugin": "com.zowe.explorer.server.proxy",
+       "sourceName": "data",
+       "localName": "explorerServer"
+    }
+  ]
+}
+

@@ -1,0 +1,19 @@
+<!-- 
+  This program and the accompanying materials are made available under the terms of the 
+  Eclipse Public License v2.0 which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-v20.html
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Copyright IBM Corporation 2018
+-->
+<?xml version="1.0"?>
+<project name="explorer-proxy" xmlns:if="ant:if" xmlns:unless="ant:unless">
+    <target name="deploy">
+      <exec if:set="isZos" executable="sh">
+        <arg line="-c 'cp ../authentication.json ../remote.json ${deploy}/instance/ZLUX/pluginStorage/com.zowe.explorer.server.proxy/_internal/sercives/data/'"/>
+      </exec>
+      <copy unless:set="isZos" file="../authentication.json" tofile="${deploy}/instance/ZLUX/pluginStorage/com.zowe.explorer.server.proxy/_internal/services/data/authentication.json"/>
+      <copy unless:set="isZos" file="../remote.json" tofile="${deploy}/instance/ZLUX/pluginStorage/com.zowe.explorer.server.proxy/_internal/services/data/remote.json"/>
+    </target>
+</project>

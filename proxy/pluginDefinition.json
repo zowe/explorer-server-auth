@@ -2,8 +2,8 @@
   "identifier": "com.zowe.explorer.server.proxy",
   "pluginType": "application",
   "authenticationCategory": "explorerServer",
-  "apiVersion": "1.0",
-  "pluginVersion": "1.0",
+  "apiVersion": "1.0.0",
+  "pluginVersion": "1.0.0",
   "dataServices": [
     {
       "type": "external",

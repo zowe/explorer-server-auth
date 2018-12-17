@@ -10,7 +10,8 @@
        "type": "import",
        "sourcePlugin": "com.zowe.explorer.server.proxy",
        "sourceName": "data",
-       "localName": "explorerServer"
+       "localName": "explorerServer",
+       "versionRange": "^1.0.0"
     }
   ]
 }
